@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayomide Olajide — Web Developer Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2,3,4,5,6,7&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+  </head>
+  <body>
+    <!-- Topbar (mobile) -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-meta">
+          <img class="topbar-avatar" src="../images/me.jpeg" alt="Ayomide" />
+          <div>
+            <div class="topbar-name">Ayomide Olajide</div>
+            <div class="topbar-role">Web Developer</div>
+          </div>
+        </div>
+        <button class="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="scrim" hidden></div>
+    <aside class="drawer" aria-label="Mobile menu" aria-hidden="true">
+      <div class="drawer-head">
+        <div class="drawer-title">
+          <div class="avatar-badge">
+            <img src="../images/me.jpeg" alt="Ayomide" />
+          </div>
+          <div>
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a class="drawer-link active" href="/index.html"
+          ><span class="ic"><i class="fa-solid fa-house"></i></span>Home</a
+        >
+        <a class="drawer-link" href="../html/project.html"
+          ><span class="ic"><i class="fa-regular fa-folder"></i></span
+          >Projects</a
+        >
+        <a class="drawer-link" href="../html/service.html"
+          ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+          >Services</a
+        >
+        <a class="drawer-link" href="#about"
+          ><span class="ic"><i class="fa-solid fa-user"></i></span>About</a
+        >
+
+        <a class="drawer-link" href="../html/contact.html"
+          ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+          >Contact</a
+        >
+      </nav>
+
+      <div class="drawer-cta">
+        <div class="avail-pill"><span class="dot"></span> Available Now</div>
+        <a class="btn btn-primary full" href="../html/contact.html">
+          Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Desktop Sidebar -->
+    <input
+      id="nav-toggle"
+      class="nav-toggle"
+      type="checkbox"
+      aria-hidden="true"
+    />
+    <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="sidebar-inner">
+        <div class="profile">
+          <img class="avatar" src="../images/me.jpeg" alt="Profile photo" />
+          <div class="profile-meta">
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link active" href="/index.html"
+            ><span class="ic"><i class="fa-solid fa-house"></i></span
+            ><span class="text">Home</span></a
+          >
+          <a class="nav-link" href="../html/project.html"
+            ><span class="ic"><i class="fa-regular fa-folder"></i></span
+            ><span class="text">Projects</span></a
+          >
+          <a class="nav-link" href="../html/service.html"
+            ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+            ><span class="text">Services</span></a
+          >
+          <a class="nav-link" href="#about"
+            ><span class="ic"><i class="fa-solid fa-user"></i></span
+            ><span class="text">About</span></a
+          >
+          <a class="nav-link" href="../html/contact.html"
+            ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+            ><span class="text">Contact</span></a
+          >
+        </nav>
+       
+      </div>
+    </aside>
+    <main class="main">
+      <!-- ================= ABOUT (Exact Layout) ================= -->
+      <section id="about" class="about-exact">
+        <div class="container">
+          <!-- Headline + Stats -->
+          <header class="ae-head">
+            <h1 class="ae-title">Hi, I’m Harry Bardon</h1>
+            <p class="ae-lead">
+              I’m passionate about designing products that blend functionality
+              and elegance, enhancing user satisfaction while supporting
+              business growth.
+            </p>
+
+            <div class="ae-stats" role="list">
+              <article
+                class="ae-stat"
+                role="listitem"
+                aria-label="Projects Completed"
+              >
+                <div class="num">500+</div>
+                <div class="label">Projects Completed</div>
+                <p class="note">
+                  Helping various clients around the world by actualizing their
+                  idea and vision into reality.
+                </p>
+              </article>
+
+              <article
+                class="ae-stat"
+                role="listitem"
+                aria-label="Years of Experiences"
+              >
+                <div class="num">12+</div>
+                <div class="label">Years of Experiences</div>
+                <p class="note">
+                  Over a decade of expertise in UI/UX and product design,
+                  crafting digital experiences.
+                </p>
+              </article>
+
+              <article
+                class="ae-stat"
+                role="listitem"
+                aria-label="Client Satisfaction"
+              >
+                <div class="num">99%</div>
+                <div class="label">Client Satisfaction</div>
+                <p class="note">
+                  Proud to maintain a 99% satisfaction rate, with clients
+                  consistently.
+                </p>
+              </article>
+            </div>
+          </header>
+
+          <!-- Hero Image -->
+          <figure class="ae-hero">
+            <img src="/mnt/data/about.png" alt="Portrait" loading="lazy" />
+          </figure>
+
+          <!-- Subheading block -->
+          <section class="ae-sub">
+            <h2 class="ae-strap">
+              As a UI/UX and Product Designer with a background in both
+              <em>creativity and strategic thinking</em>, I create digital
+              experiences that engage, inspire, and deliver results.
+            </h2>
+            <p class="ae-desc">
+              My design approach combines in-depth research, user-centered
+              design principles, and innovative aesthetics, ensuring that each
+              project I take on is visually compelling, highly functional, and
+              aligned with the client’s objectives.
+            </p>
+          </section>
+
+          <!-- Process -->
+          <section class="ae-process">
+            <h3 class="section-title">My Design Process</h3>
+            <p class="muted">
+              Our process is simple. We start with your needs, create engaging
+              experiences, research, experiment with ideas, and use your
+              feedback to guide us.
+            </p>
+
+            <ol class="ae-steps">
+              <li class="ae-step">
+                <div class="dot">1</div>
+                <div class="body">
+                  <h4>Discovery &amp; Strategy</h4>
+                  <p>
+                    Understanding your business, target audience, and project
+                    goals is my first step. I gather insights through research
+                    and align on a clear strategy that ensures we’re set up for
+                    success.
+                  </p>
+                </div>
+                <div class="thumb" aria-hidden="true"></div>
+              </li>
+
+              <li class="ae-step">
+                <div class="dot">2</div>
+                <div class="body">
+                  <h4>Ideation &amp; Wireframing</h4>
+                  <p>
+                    Before diving into detailed design, I create wireframes and
+                    prototypes to map out the structure and flow, making sure
+                    that the user journey is smooth and intuitive.
+                  </p>
+                </div>
+                <div class="thumb" aria-hidden="true"></div>
+              </li>
+
+              <li class="ae-step">
+                <div class="dot">3</div>
+                <div class="body">
+                  <h4>Design &amp; Development</h4>
+                  <p>
+                    With the foundation set, I bring the product to life through
+                    high-fidelity design and collaborate closely with developers
+                    to ensure every interaction is pixel-perfect and functional.
+                  </p>
+                </div>
+                <div class="thumb" aria-hidden="true"></div>
+              </li>
+
+              <li class="ae-step">
+                <div class="dot">4</div>
+                <div class="body">
+                  <h4>Testing &amp; Iteration</h4>
+                  <p>
+                    I value feedback and use testing insights to refine the
+                    design, ensuring that the final product is not only
+                    aesthetically pleasing but also highly effective and
+                    user-centered.
+                  </p>
+                </div>
+                <div class="thumb" aria-hidden="true"></div>
+              </li>
+            </ol>
+          </section>
+
+          <!-- Experience & Expertise -->
+          <section class="ae-exp">
+            <h3 class="section-title">Experience and Expertise</h3>
+            <p class="muted">
+              With extensive experience in UI/UX and product design, I’ve had
+              the privilege of working on projects across various industries,
+              including tech, finance, and e-commerce. Each project has added to
+              my toolkit; helping me bring a unique blend of skills to every new
+              challenge.
+            </p>
+          </section>
+
+          <!-- Skills & Tools -->
+          <section class="ae-skills">
+            <h3 class="section-title">Skills &amp; Tools:</h3>
+            <ul class="ae-bullets">
+              <li>
+                <span></span>UI/UX Design: Crafting visually appealing and
+                user-friendly interfaces.
+              </li>
+              <li>
+                <span></span>Wireframing &amp; Prototyping: Functional
+                wireframes and prototypes to visualize journeys and
+                interactions.
+              </li>
+              <li>
+                <span></span>User Interface Design: Brand-accurate visual
+                design, from typography and color schemes to component layouts.
+              </li>
+              <li>
+                <span></span>User Research &amp; Testing: Usability testing to
+                validate decisions, identify issues, and refine interactions.
+              </li>
+              <li>
+                <span></span>Tools: Figma, Sketch, Adobe XD, InVision, and more.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Testimonial -->
+          <!-- Testimonial Carousel -->
+          <section
+            class="ae-testimonial"
+            id="testimonials"
+            aria-label="Client testimonials"
+          >
+            <ul class="t-slides">
+              <!-- Slide 1 -->
+              <li class="t-slide is-active">
+                <div class="t-brand">Logopisum</div>
+                <blockquote class="t-quote">
+                  “From the start, Harry demonstrated a deep understanding of
+                  both our business objectives and our user base. His ability to
+                  transform complex functionality into an intuitive,
+                  user-friendly design is truly remarkable.”
+                </blockquote>
+                <div class="t-user">
+                  <img
+                    src="https://i.pravatar.cc/64?img=10"
+                    alt="Emma Harriston"
+                  />
+                  <div>
+                    <div class="t-name">Emma Harriston</div>
+                    <div class="t-role">Product Designer</div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Slide 2 -->
+              <li class="t-slide">
+                <div class="t-brand">NovaFin</div>
+                <blockquote class="t-quote">
+                  “Ayomide rebuilt our dashboard with TypeScript and cut load
+                  times by 60%. Clear communication, airtight delivery, and
+                  thoughtful UX decisions across the board.”
+                </blockquote>
+                <div class="t-user">
+                  <img
+                    src="https://i.pravatar.cc/64?img=32"
+                    alt="Liam O’Connor"
+                  />
+                  <div>
+                    <div class="t-name">Liam O’Connor</div>
+                    <div class="t-role">Head of Engineering</div>
+                  </div>
+                </div>
+              </li>
+
+              <!-- Slide 3 -->
+              <li class="t-slide">
+                <div class="t-brand">Shoply</div>
+                <blockquote class="t-quote">
+                  “We launched a new storefront in two weeks. Accessibility,
+                  SEO, and Core Web Vitals all green—sales lifted 28% in month
+                  one.”
+                </blockquote>
+                <div class="t-user">
+                  <img
+                    src="https://i.pravatar.cc/64?img=15"
+                    alt="Sophia Martinez"
+                  />
+                  <div>
+                    <div class="t-name">Sophia Martinez</div>
+                    <div class="t-role">E-commerce Lead</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <div class="t-arrows">
+              <button
+                class="t-btn prev"
+                type="button"
+                aria-label="Previous testimonial"
+              >
+                ↩
+              </button>
+              <button
+                class="t-btn next"
+                type="button"
+                aria-label="Next testimonial"
+              >
+                ↪
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- =============== END ABOUT ================= -->
+
+      <!-- Footer -->
+      <footer class="footer-dark">
+        <div class="container">
+          <div class="footer-top">
+            <div class="lets-talk">Let’s Talk</div>
+            <a class="big-email" href="mailto:olajideayomide946@gmail.com"
+              >olajideayomide946@gmail.com <span class="arrow">↗</span></a
+            >
+          </div>
+
+          <div class="footer-mid">
+            <div class="get-in-touch">
+              <div class="label">Get in touch</div>
+              <form class="subscribe" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required />
+                <button class="btn btn-light" type="submit">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="link-columns">
+              <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blog post</a></li>
+                <li><a href="#bookmark">Bookmark</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Dribbble</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>@OlajideAyomide all rights Reserve.</span>
+            <span>© <span id="year"></span></span>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="../script.js"></script>
+  </body>
+</html>

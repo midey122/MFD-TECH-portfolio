@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayomide Olajide — Web Developer Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2,3,4,5,6,7&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/project.css" />
+  </head>
+  <body>
+    <!-- Topbar (mobile) -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-meta">
+          <img class="topbar-avatar" src="../images/me.jpeg" alt="Ayomide" />
+          <div>
+            <div class="topbar-name">Ayomide Olajide</div>
+            <div class="topbar-role">Web Developer</div>
+          </div>
+        </div>
+        <button class="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="scrim" hidden></div>
+    <aside class="drawer" aria-label="Mobile menu" aria-hidden="true">
+      <div class="drawer-head">
+        <div class="drawer-title">
+          <div class="avatar-badge">
+            <img src="../images/me.jpeg" alt="Ayomide" />
+          </div>
+          <div>
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a class="drawer-link active" href="/index.html"
+          ><span class="ic"><i class="fa-solid fa-house"></i></span>Home</a
+        >
+        <a class="drawer-link" href="#projects"
+          ><span class="ic"><i class="fa-regular fa-folder"></i></span
+          >Projects</a
+        >
+        <a class="drawer-link" href="../html/service.html"
+          ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+          >Services</a
+        >
+        <a class="drawer-link" href="../html/about.html"
+          ><span class="ic"><i class="fa-solid fa-user"></i></span>About</a
+        >
+
+        <a class="drawer-link" href="../html/contact.html"
+          ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+          >Contact</a
+        >
+      </nav>
+
+      <div class="drawer-cta">
+        <div class="avail-pill"><span class="dot"></span> Available Now</div>
+        <a class="btn btn-primary full" href="../html/contact.html">
+          Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Desktop Sidebar -->
+    <input
+      id="nav-toggle"
+      class="nav-toggle"
+      type="checkbox"
+      aria-hidden="true"
+    />
+    <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="sidebar-inner">
+        <div class="profile">
+          <img class="avatar" src="../images/me.jpeg" alt="Profile photo" />
+          <div class="profile-meta">
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link active" href="/index.html"
+            ><span class="ic"><i class="fa-solid fa-house"></i></span
+            ><span class="text">Home</span></a
+          >
+          <a class="nav-link" href="#projects"
+            ><span class="ic"><i class="fa-regular fa-folder"></i></span
+            ><span class="text">Projects</span></a
+          >
+          <a class="nav-link" href="../html/service.html"
+            ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+            ><span class="text">Services</span></a
+          >
+          <a class="nav-link" href="../html/about.html"
+            ><span class="ic"><i class="fa-solid fa-user"></i></span
+            ><span class="text">About</span></a
+          >
+          <a class="nav-link" href="../html/contact.html"
+            ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+            ><span class="text">Contact</span></a
+          >
+        </nav>
+
+      
+      </div>
+    </aside>
+    <main class="main">
+      <!-- ===================== Recent Projects ===================== -->
+      <section id="projects" class="projects-section">
+        <div class="container">
+          <header class="projects-heads">
+            <h2 class="h2">Recent Projects</h2>
+            <p class="muted">
+              A closer look at our newest ventures, where creativity meets
+              precision.
+            </p>
+          </header>
+
+          <div class="projects-grid">
+            <!-- Featured / Hero -->
+            <article class="project-card project-featured">
+              <div class="thumb">
+                <img
+                  src="assets/projects/featured.jpg"
+                  alt="Wrangle - Slack Management Tool UI preview"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Wrangle - Slack Management Tool</h3>
+                  <div class="tags">
+                    <span class="chip">Web application</span>
+                    <span class="chip">Branding</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <!-- Row 1 -->
+            <article class="project-card">
+              <div class="thumb">
+                <img
+                  src="assets/projects/wellness.jpg"
+                  alt="Wellness - Yoga app screens"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Wellness - Yoga</h3>
+                  <div class="tags">
+                    <span class="chip">Mobile app</span>
+                    <span class="chip">Web application</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="thumb">
+                <img
+                  src="assets/projects/shoozy.jpg"
+                  alt="Shoozy - Ecommerce landing preview"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Shoozy - eCommerce</h3>
+                  <div class="tags">
+                    <span class="chip">Landing Page</span>
+                    <span class="chip">Responsive</span>
+                  </div>
+                </div>
+                <div class="year">2025</div>
+              </div>
+            </article>
+
+            <!-- Row 2 (wide banner style like screenshot) -->
+            <article class="project-card project-banner">
+              <div class="thumb">
+                <img
+                  src="assets/projects/recroot.jpg"
+                  alt="Recroot - job platform site"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Sahale Snacks - Ecommerce</h3>
+                  <div class="tags">
+                    <span class="chip">Website</span>
+                    <span class="chip">Responsive</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <!-- Row 3 -->
+            <article class="project-card">
+              <div class="thumb">
+                <img
+                  src="assets/projects/doctopia.jpg"
+                  alt="Doctopia - Healthcare dashboard"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Doctopia - Healthcare</h3>
+                  <div class="tags">
+                    <span class="chip">Web application</span>
+                    <span class="chip">Mobile app</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="thumb">
+                <img
+                  src="assets/projects/eyetime.jpg"
+                  alt="EyeTime - Ecommerce UI"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">EyeTime - Ecommerce</h3>
+                  <div class="tags">
+                    <span class="chip">Web application</span>
+                    <span class="chip">Mobile app</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <!-- Row 4 (wide banner style) -->
+            <article class="project-card project-banner">
+              <div class="thumb">
+                <img
+                  src="assets/projects/outdoor.jpg"
+                  alt="Outdoor Master - agency site dark theme"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Outdoor Master - Ecommerce</h3>
+                  <div class="tags">
+                    <span class="chip">Website</span>
+                    <span class="chip">Responsive</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <!-- Row 5 -->
+            <article class="project-card">
+              <div class="thumb">
+                <img
+                  src="assets/projects/gigabyte.jpg"
+                  alt="Gigabyte - Technology landing"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Gigabyte - Technology</h3>
+                  <div class="tags">
+                    <span class="chip">Website</span>
+                    <span class="chip">Web Development</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="thumb">
+                <img
+                  src="assets/projects/bagrush.jpg"
+                  alt="Bagrush - Ecommerce landing"
+                  loading="lazy"
+                />
+              </div>
+              <div class="meta">
+                <div>
+                  <h3 class="title">Bagrush - Ecommerce</h3>
+                  <div class="tags">
+                    <span class="chip">Landing Page</span>
+                    <span class="chip">Landing Page</span>
+                  </div>
+                </div>
+                <div class="year">2024</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- =================== /Recent Projects =================== -->
+
+      <!-- Footer -->
+      <footer class="footer-dark">
+        <div class="container">
+          <div class="footer-top">
+            <div class="lets-talk">Let’s Talk</div>
+            <a class="big-email" href="mailto:olajideayomide946@gmail.com"
+              >olajideayomide946@gmail.com <span class="arrow">↗</span></a
+            >
+          </div>
+
+          <div class="footer-mid">
+            <div class="get-in-touch">
+              <div class="label">Get in touch</div>
+              <form class="subscribe" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required />
+                <button class="btn btn-light" type="submit">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="link-columns">
+              <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blog post</a></li>
+                <li><a href="#bookmark">Bookmark</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Dribbble</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>@OlajideAyomide all rights Reserve.</span>
+            <span>© <span id="year"></span></span>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

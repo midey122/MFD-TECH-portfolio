@@ -1,0 +1,212 @@
+/* ===== Recent Projects ===== */
+:root {
+  /* Brand (complementary accent hue) */
+  --brand: #9B59B6;
+  /* Classic Purple */
+  --brand-02: rgba(155, 89, 182, 0.02);
+  --brand-06: rgba(155, 89, 182, 0.06);
+  --brand-10: rgba(155, 89, 182, 0.10);
+  --brand-14: rgba(155, 89, 182, 0.14);
+  --brand-20: rgba(155, 89, 182, 0.20);
+  --brand-30: rgba(155, 89, 182, 0.30);
+
+  /* Neutrals */
+  --bg: #F7FAFC;
+  /* Very light soft gray background */
+  --panel: #FFFFFF;
+  /* Clean white panel */
+  --text: black;
+  /* Medium gray for body text */
+  --muted: darkgrey;
+  /* Light muted grayish-blue for secondary text */
+  --line: #D1D9E1;
+  /* Light gray-blue for lines */
+  --shadow: 0 10px 30px rgba(155, 89, 182, 0.1);
+  /* Soft shadow with purple undertone */
+
+  /* Heading and Subheading */
+  --heading: #000000;
+  /* Black for headings */
+  --subheading: #000000;
+  /* Black for subheadings */
+
+
+  /* Layout */
+  --round: 12px;
+  --max-width: 1100px;
+  --container-pad: clamp(16px, 4vw, 24px);
+
+  /* Typography */
+  --font-headings: "General Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --h1: clamp(28px, 4.2vw, 56px);
+  --h2: clamp(20px, 2.4vw, 32px);
+  --h3: clamp(16px, 1.8vw, 20px);
+  --lead: clamp(14px, 1.6vw, 16px);
+  --text-sm: clamp(12px, 1.3vw, 14px);
+}
+
+.projects-section {
+  padding: clamp(32px, 4vw, 64px) 0;
+  background: #fff;
+}
+
+.projects-section .container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.projects-heads {
+  margin-bottom: 24px;
+  /* flex-direction: column; */
+  gap: 0;
+  text-align: left;
+}
+
+.projects-heads .h2 {
+  font-family: "General Sans", system-ui, -apple-system, Segoe UI, Roboto, "Inter", Arial, sans-serif;
+  font-weight: 700;
+  font-size: clamp(24px, 3.4vw, 32px);
+  line-height: 1.2;
+  margin: 0 0 6px;
+}
+
+.projects-heads .muted {
+  color: #6b7280;
+  /* gray-500 */
+  font-size: 14px;
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Cards */
+.project-card {
+  position: relative;
+  background: #f9fafb;
+  border: 1px solid #eef0f3;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(16, 24, 40, 0.08);
+}
+
+/* subtle background pattern like screenshot */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  background:
+    radial-gradient(1200px 1200px at 10% -20%, rgba(99, 102, 241, 0.06), transparent 40%),
+    radial-gradient(1200px 1200px at 110% 120%, rgba(14, 165, 233, 0.05), transparent 40%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-card .thumb {
+  position: relative;
+  z-index: 1;
+  aspect-ratio: 16 / 9;
+  background: #fff;
+}
+
+.project-card .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.project-card .meta {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px;
+}
+
+.project-card .title {
+  margin: 0 0 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  /* slate-900 */
+}
+
+.project-card .year {
+  font-weight: 600;
+  color: #6b7280;
+  white-space: nowrap;
+  margin-left: 8px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 6px 10px;
+  background: #f3f4f6;
+  /* gray-100 */
+  border: 1px solid #e5e7eb;
+  color: #4b5563;
+  /* gray-600 */
+  border-radius: 999px;
+}
+
+/* Featured + banner variants to mimic the long cards in the screenshot */
+.project-featured {
+  grid-column: 1 / -1;
+}
+
+.project-featured .thumb {
+  aspect-ratio: 21 / 9;
+}
+
+.project-banner {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 960px) {
+  .projects-section{
+  padding: clamp(0px, 0vw, 0px) 0;
+   
+  }  .projects-grid {
+    gap: 24px;
+  }
+
+  .project-card .title {
+    font-size: 18px;
+  }
+}
+
+/* Optional: dark footer edge separation */
+.projects-section+.footer-dark {
+  margin-top: 24px;
+}
+
+/* ===== Utility (if not already present) ===== */
+.h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.muted {
+  color: #6b7280;
+}

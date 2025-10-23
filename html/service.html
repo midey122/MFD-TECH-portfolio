@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayomide Olajide — Web Developer Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2,3,4,5,6,7&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/service.css" />
+  </head>
+  <body>
+    <!-- Topbar (mobile) -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-meta">
+          <img class="topbar-avatar" src="../images/me.jpeg" alt="Ayomide" />
+          <div>
+            <div class="topbar-name">Ayomide Olajide</div>
+            <div class="topbar-role">Web Developer</div>
+          </div>
+        </div>
+        <button class="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="scrim" hidden></div>
+    <aside class="drawer" aria-label="Mobile menu" aria-hidden="true">
+      <div class="drawer-head">
+        <div class="drawer-title">
+          <div class="avatar-badge">
+            <img src="../images/me.jpeg" alt="Ayomide" />
+          </div>
+          <div>
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a class="drawer-link active" href="/index.html"
+          ><span class="ic"><i class="fa-solid fa-house"></i></span>Home</a
+        >
+        <a class="drawer-link" href="../html/project.html"
+          ><span class="ic"><i class="fa-regular fa-folder"></i></span
+          >Projects</a
+        >
+        <a class="drawer-link" href="#services"
+          ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+          >Services</a
+        >
+        <a class="drawer-link" href="../html/about.html"
+          ><span class="ic"><i class="fa-solid fa-user"></i></span>About</a
+        >
+
+        <a class="drawer-link" href="../html/contact.html"
+          ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+          >Contact</a
+        >
+      </nav>
+
+      <div class="drawer-cta">
+        <div class="avail-pill"><span class="dot"></span> Available Now</div>
+        <a class="btn btn-primary full" href="../html/contact.html">
+          Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Desktop Sidebar -->
+    <input
+      id="nav-toggle"
+      class="nav-toggle"
+      type="checkbox"
+      aria-hidden="true"
+    />
+    <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="sidebar-inner">
+        <div class="profile">
+          <img class="avatar" src="../images/me.jpeg" alt="Profile photo" />
+          <div class="profile-meta">
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link active" href="/index.html"
+            ><span class="ic"><i class="fa-solid fa-house"></i></span
+            ><span class="text">Home</span></a
+          >
+          <a class="nav-link" href="../html/project.html"
+            ><span class="ic"><i class="fa-regular fa-folder"></i></span
+            ><span class="text">Projects</span></a
+          >
+          <a class="nav-link" href="#services"
+            ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+            ><span class="text">Services</span></a
+          >
+          <a class="nav-link" href="../html/about.html"
+            ><span class="ic"><i class="fa-solid fa-user"></i></span
+            ><span class="text">About</span></a
+          >
+          <a class="nav-link" href="../html/contact.html"
+            ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+            ><span class="text">Contact</span></a
+          >
+        </nav>
+
+        
+      </div>
+    </aside>
+    <main class="main">
+      <!-- Web Development Services Section -->
+      <!-- Web Development Services Section -->
+      <section id="services" class="service-section">
+        <div class="container">
+          <div class="service-header">
+            <h2>Crafting High-Performance Web Experiences</h2>
+            <p>
+              With expertise in modern web technologies, I deliver fast, secure,
+              and scalable web solutions tailored to your business goals. Let’s
+              build digital experiences that inspire, engage, and perform.
+            </p>
+            <a href="#contact" class="btn btn-primary"
+              >Get Started <i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+
+          <!-- Frontend Development -->
+          <div class="service-block">
+            <div class="service-text">
+              <h3>Frontend Development</h3>
+              <p>
+                Crafting visually stunning and highly responsive web interfaces
+                that provide a seamless experience across all platforms and
+                devices.
+              </p>
+              <ul>
+                <li>Responsive UI/UX Implementation</li>
+                <li>React & Next.js Development</li>
+                <li>Performance Optimization</li>
+              </ul>
+              <a href="#" class="btn-outline"
+                >View Details
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="service-img">
+              <img src="images/frontend-dev.jpg" alt="Frontend Development" />
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="service-block reverse">
+            <div class="service-img">
+              <img src="images/backend-dev.jpg" alt="Backend Development" />
+            </div>
+            <div class="service-text">
+              <h3>Backend Development</h3>
+              <p>
+                Developing secure, scalable server-side systems that ensure
+                smooth data handling and business logic execution.
+              </p>
+              <ul>
+                <li>Node.js, Express & API Integration</li>
+                <li>Database Architecture (MongoDB, PostgreSQL)</li>
+                <li>Authentication & Security</li>
+              </ul>
+              <a href="#" class="btn-outline"
+                >View Details
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <!-- Web App Development -->
+          <div class="service-block">
+            <div class="service-text">
+              <h3>Web Application Development</h3>
+              <p>
+                Building dynamic and interactive web apps that combine
+                innovation with performance to drive user engagement and
+                business growth.
+              </p>
+              <ul>
+                <li>Progressive Web Apps (PWA)</li>
+                <li>Real-Time Data Systems</li>
+                <li>Cloud & API Services</li>
+              </ul>
+              <a href="#" class="btn-outline"
+                >View Details
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div class="service-img">
+              <img src="images/webapp-dev.jpg" alt="Web App Development" />
+            </div>
+          </div>
+
+          <!-- Website Optimization & SEO -->
+          <div class="service-block reverse">
+            <div class="service-img">
+              <img src="images/seo-dev.jpg" alt="Website Optimization" />
+            </div>
+            <div class="service-text">
+              <h3>Website Optimization & SEO</h3>
+              <p>
+                Enhancing your website’s performance, accessibility, and
+                visibility through modern optimization and SEO best practices.
+              </p>
+              <ul>
+                <li>Speed & Core Web Vitals Optimization</li>
+                <li>Technical SEO Implementation</li>
+                <li>Accessibility & Performance Audits</li>
+              </ul>
+              <a href="#" class="btn-outline"
+                >View Details
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-dark">
+        <div class="container">
+          <div class="footer-top">
+            <div class="lets-talk">Let’s Talk</div>
+            <a class="big-email" href="mailto:olajideayomide946@gmail.com"
+              >olajideayomide946@gmail.com <span class="arrow">↗</span></a
+            >
+          </div>
+
+          <div class="footer-mid">
+            <div class="get-in-touch">
+              <div class="label">Get in touch</div>
+              <form class="subscribe" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required />
+                <button class="btn btn-light" type="submit">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="link-columns">
+              <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blogs">Blog post</a></li>
+                <li><a href="#bookmark">Bookmark</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Behance</a></li>
+                <li><a href="#">Dribbble</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>@OlajideAyomide all rights Reserve.</span>
+            <span>© <span id="year"></span></span>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
