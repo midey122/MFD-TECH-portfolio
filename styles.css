@@ -551,6 +551,7 @@ h1, h2, h3, h4, .title, .subtitle, .section-title, .project-title, .service-titl
                 #f9f9f9 1px,
                 #f9f9f9 25px
             );
+            border-radius: 15px;
         }
 
 /* Page Container */
@@ -713,7 +714,9 @@ h1 {
 /* Media Query for smaller screens */
 @media (max-width: 768px) {
 
-
+.design{
+  padding-left: 20px;
+}
   h1 {
     font-size: 2rem;
   }
