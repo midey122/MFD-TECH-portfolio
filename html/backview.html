@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ayomide Olajide — Web Developer Portfolio</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@1,2,3,4,5,6,7&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/view.css" />
+  </head>
+  <body>
+    <!-- Topbar (mobile) -->
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="topbar-meta">
+          <img class="topbar-avatar" src="../images/me.jpeg" alt="Ayomide" />
+          <div>
+            <div class="topbar-name">Ayomide Olajide</div>
+            <div class="topbar-role">Web Developer</div>
+          </div>
+        </div>
+        <button class="hamburger" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="scrim" hidden></div>
+    <aside class="drawer" aria-label="Mobile menu" aria-hidden="true">
+      <div class="drawer-head">
+        <div class="drawer-title">
+          <div class="avatar-badge">
+            <img src="../images/me.jpeg" alt="Ayomide" />
+          </div>
+          <div>
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+        <button class="drawer-close" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <nav class="drawer-nav">
+        <a class="drawer-link active" href="../index.html"
+          ><span class="ic"><i class="fa-solid fa-house"></i></span>Home</a
+        >
+        <a class="drawer-link" href="../html/project.html"
+          ><span class="ic"><i class="fa-regular fa-folder"></i></span
+          >Projects</a
+        >
+        <a class="drawer-link" href="../html/service.html"
+          ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+          >Services</a
+        >
+        <a class="drawer-link" href="../html/about.html"
+          ><span class="ic"><i class="fa-solid fa-user"></i></span>About</a
+        >
+
+        <a class="drawer-link" href="../html/contact.html"
+          ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+          >Contact</a
+        >
+      </nav>
+
+      <div class="drawer-cta">
+        <div class="avail-pill"><span class="dot"></span> Available Now</div>
+        <a class="btn btn-primary full" href="../html/contact.html">
+          Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </aside>
+
+    <!-- Desktop Sidebar -->
+    <input
+      id="nav-toggle"
+      class="nav-toggle"
+      type="checkbox"
+      aria-hidden="true"
+    />
+    <label for="nav-toggle" class="nav-toggle-btn" aria-hidden="true"
+      ><i class="fa-solid fa-bars"></i
+    ></label>
+
+    <aside class="sidebar" aria-label="Sidebar">
+      <div class="sidebar-inner">
+        <div class="profile">
+          <img class="avatar" src="../images/me.jpeg" alt="Profile photo" />
+          <div class="profile-meta">
+            <div class="name">Ayomide Olajide</div>
+            <div class="role">Web Developer</div>
+          </div>
+        </div>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav-link active" href="../index.html"
+            ><span class="ic"><i class="fa-solid fa-house"></i></span
+            ><span class="text">Home</span></a
+          >
+          <a class="nav-link" href="../html/project.html"
+            ><span class="ic"><i class="fa-regular fa-folder"></i></span
+            ><span class="text">Projects</span></a
+          >
+          <a class="nav-link" href="../html/service.html"
+            ><span class="ic"><i class="fa-solid fa-briefcase"></i></span
+            ><span class="text">Services</span></a
+          >
+          <a class="nav-link" href="../html/about.html"
+            ><span class="ic"><i class="fa-solid fa-user"></i></span
+            ><span class="text">About</span></a
+          >
+          <a class="nav-link" href="../html/contact.html"
+            ><span class="ic"><i class="fa-regular fa-envelope"></i></span
+            ><span class="text">Contact</span></a
+          >
+        </nav>
+
+        <!-- <div class="drawer-cta">
+        <div class="avail-pill"><span class="dot"></span> Available Now</div>
+        <a class="btn btn-primary full" href="./html/contact.html">
+          Hire Me <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div> -->
+      </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="main">
+      <!-- HERO -->
+
+      <section
+        class="brand-services section"
+        id="backend-development"
+        aria-label="Backend Development Services"
+      >
+        <div class="bs-container">
+          <!-- Top intro -->
+          <header class="bs-head">
+            <h2 class="bs-title">Backend Development Services</h2>
+            <p class="bs-sub">
+              As a Backend Developer, I build secure, scalable, and
+              high-performance server-side systems that power seamless digital
+              experiences—ensuring stability, speed, and efficiency behind every
+              application.
+            </p>
+          </header>
+
+          <!-- 3-image collage (1 tall left, 2 stacked right) -->
+          <div
+            class="bs-collage"
+            role="group"
+            aria-label="Backend development previews"
+          >
+            <figure class="bs-col bs-left">
+              <img
+                src="./images/backend-left.png"
+                alt="Server infrastructure and database diagram"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="bs-col bs-right-top">
+              <img
+                src="./images/backend-right-top.png"
+                alt="API endpoints and architecture preview"
+                loading="lazy"
+              />
+            </figure>
+
+            <figure class="bs-col bs-right-bottom">
+              <img
+                src="./images/backend-right-bottom.png"
+                alt="Admin dashboard and backend system UI"
+                loading="lazy"
+              />
+            </figure>
+          </div>
+
+          <!-- Service Overview -->
+          <section class="bs-overview" aria-labelledby="bs-ov-title">
+            <h3 id="bs-ov-title" class="bs-overview-title">Service Overview</h3>
+            <p class="bs-overview-sub">
+              Power your applications with reliable and efficient
+              <strong>Backend Development</strong>. I design and implement
+              robust server-side architectures, APIs, and databases that deliver
+              smooth performance, data integrity, and security across all
+              platforms.
+            </p>
+
+            <h4 class="bs-block-title">Backend Development</h4>
+            <ul class="bs-list">
+              <li>
+                <strong>API Development &amp; Integration</strong><br />
+                Build and integrate RESTful or GraphQL APIs that enable seamless
+                data exchange between your frontend and backend systems.
+              </li>
+              <li>
+                <strong>Database Design &amp; Optimization</strong><br />
+                Design efficient database schemas, manage data migrations, and
+                optimize queries for performance using SQL or NoSQL systems.
+              </li>
+              <li>
+                <strong>Server-Side Logic &amp; Automation</strong><br />
+                Develop core business logic, background processes, and
+                automation pipelines to ensure scalability and reliability.
+              </li>
+              <li>
+                <strong>Security &amp; Performance Tuning</strong><br />
+                Implement authentication, authorization, encryption, and caching
+                strategies to protect user data and boost application speed.
+              </li>
+            </ul>
+          </section>
+
+          <!-- Success metrics -->
+          <section class="bs-stats" aria-labelledby="bs-stats-title">
+            <h3 id="bs-stats-title" class="sr-only">
+              Our Backend Development Success Stories
+            </h3>
+
+            <div class="bs-stats-grid">
+              <article class="bs-card">
+                <div class="bs-num">+99.9%</div>
+                <p class="bs-card-text">
+                  Achieved uptime reliability for enterprise clients through
+                  optimized server deployment and monitoring.
+                </p>
+              </article>
+
+              <article class="bs-card">
+                <div class="bs-num">3× Faster</div>
+                <p class="bs-card-text">
+                  Reduced API response times by 70% after refactoring backend
+                  architecture and introducing caching layers.
+                </p>
+              </article>
+
+              <article class="bs-card">
+                <div class="bs-num">+120%</div>
+                <p class="bs-card-text">
+                  Enhanced application scalability by integrating asynchronous
+                  task processing and queue management.
+                </p>
+              </article>
+
+              <article class="bs-card">
+                <div class="bs-num">0 Downtime</div>
+                <p class="bs-card-text">
+                  Deployed robust CI/CD pipelines enabling seamless backend
+                  updates without user disruption.
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!-- Testimonial -->
+      <section
+        class="ae-testimonial"
+        id="testimonials"
+        aria-label="Client testimonials"
+      >
+        <ul class="t-slides">
+          <li class="t-slide is-active">
+            <div class="t-brand">TechNova</div>
+            <blockquote class="t-quote">
+              “Ayomide built our entire business website from scratch. The code
+              was clean, responsive, and the design perfectly matched our brand.
+              Excellent communication all through.”
+            </blockquote>
+            <div class="t-user">
+              <img src="https://i.pravatar.cc/64?img=10" alt="Emma Harriston" />
+              <div>
+                <div class="t-name">Emma Harriston</div>
+                <div class="t-role">Startup Founder</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="t-slide">
+            <div class="t-brand">NovaFin</div>
+            <blockquote class="t-quote">
+              “Ayomide optimized our web app and reduced load time by over 60%.
+              His attention to performance and structure made a huge
+              difference.”
+            </blockquote>
+            <div class="t-user">
+              <img src="https://i.pravatar.cc/64?img=32" alt="Liam O’Connor" />
+              <div>
+                <div class="t-name">Liam O’Connor</div>
+                <div class="t-role">Head of Engineering</div>
+              </div>
+            </div>
+          </li>
+
+          <li class="t-slide">
+            <div class="t-brand">Shoply</div>
+            <blockquote class="t-quote">
+              “We saw a 30% boost in conversions after Ayomide rebuilt our
+              storefront. The site is faster, cleaner, and works flawlessly on
+              all devices.”
+            </blockquote>
+            <div class="t-user">
+              <img
+                src="https://i.pravatar.cc/64?img=15"
+                alt="Sophia Martinez"
+              />
+              <div>
+                <div class="t-name">Sophia Martinez</div>
+                <div class="t-role">E-commerce Manager</div>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <div class="t-arrows">
+          <button
+            class="t-btn prev"
+            type="button"
+            aria-label="Previous testimonial"
+          >
+            ↩
+          </button>
+          <button
+            class="t-btn next"
+            type="button"
+            aria-label="Next testimonial"
+          >
+            ↪
+          </button>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="section reveal">
+        <div class="container">
+          <div class="contact-cta">
+            <div class="left">
+              <p class="mini">Have a project idea in mind?</p>
+              <h2 class="title-lg">Let’s Discuss the<br />Project Details</h2>
+              <a class="btn btn-cta" href="#" aria-label="Book a Meeting">
+                Book a Meeting
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+            <div class="right" aria-hidden="true">
+              <div class="bubble">?</div>
+              <img
+                src="./images/think-removebg-preview.png"
+                alt="Thinking person"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer-dark">
+        <div class="container">
+          <div class="footer-top">
+            <div class="lets-talk">Let’s Talk</div>
+            <a class="big-email" href="mailto:olajideayomide946@gmail.com"
+              >olajideayomide946@gmail.com <span class="arrow">↗</span></a
+            >
+          </div>
+
+          <div class="footer-mid">
+            <div class="get-in-touch">
+              <div class="label">Get in touch</div>
+              <form class="subscribe" action="#" method="post">
+                <input type="email" placeholder="Enter your email" required />
+                <button class="btn btn-light" type="submit">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="link-columns">
+              <ul>
+                <li><a href="../html/about.html">About me</a></li>
+                <li><a href="../html/service.html">Services</a></li>
+                <li><a href="../html/contact.html">Contact Me</a></li>
+                <li><a href="../html/project.html">Projects</a></li>
+                <li><a href="#blogs">Blog post</a></li>
+                <li><a href="#">404</a></li>
+              </ul>
+              <ul>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/ayomide-olajide-5349b6285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+
+                <li><a href="https://github.com/midey122">Github</a></li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/midey937?igsh=OXZ6OTY1MHhndzVq"
+                    >Instagram</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/AyomideO7007?t=OtPG0pyiE8dZdoNSQWv1ww&s=09"
+                    >Twitter</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-bottom">
+            <span>@OlajideAyomide all rights Reserve.</span>
+            <span>© <span id="year"></span></span>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      // Update Year in Footer
+      document.querySelectorAll("#year").forEach((el) => {
+        el.textContent = new Date().getFullYear(); // Set the year dynamically
+      });
+
+      // Reveal Elements on Scroll
+      const reveals = document.querySelectorAll(".reveal");
+
+      const revealOnScroll = () => {
+        const h = window.innerHeight;
+        for (const el of reveals) {
+          if (el.getBoundingClientRect().top < h - 80) {
+            el.classList.add("revealed"); // Add "revealed" class when in view
+          }
+        }
+      };
+
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+
+      // Set Active Navigation Link Based on Scroll Position
+      const navLinks = document.querySelectorAll(".nav-link");
+      const sections = Array.from(navLinks).map((a) => {
+        return document.querySelector(a.getAttribute("href"));
+      });
+
+      const setActive = () => {
+        const y = window.scrollY + 120;
+        let idx = sections.length - 1;
+
+        for (let i = 0; i < sections.length; i++) {
+          if (sections[i] && sections[i].offsetTop <= y) {
+            idx = i;
+          }
+        }
+
+        navLinks.forEach((l) => l.classList.remove("active")); // Remove active from all
+        if (navLinks[idx]) navLinks[idx].classList.add("active"); // Add active to the correct one
+      };
+
+      window.addEventListener("scroll", setActive);
+      window.addEventListener("load", setActive);
+
+      // Close Drawer When Navigation Link is Clicked (Mobile Menu)
+      document.querySelectorAll(".nav-link").forEach((a) => {
+        a.addEventListener("click", () => {
+          const cb = document.getElementById("nav-toggle");
+          if (cb && cb.checked) cb.checked = false; // Close checkbox-based menu if clicked
+        });
+      });
+
+      // Hamburger Drawer (Mobile Menu) Open/Close Logic
+
+      // Recent Works Carousel (Auto-rotating images)
+      (function () {
+        const row = document.getElementById("worksRow");
+        const cards = row ? Array.from(row.querySelectorAll(".work-card")) : [];
+
+        if (
+          !row ||
+          !cards.length ||
+          window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ) {
+          return; // If row is not found, or motion preference is set to reduce, stop execution
+        }
+
+        cards.forEach((c) => {
+          const d = c.getAttribute("data-delay") || "0s";
+          c.style.animationDelay = d; // Set animation delay for each card
+        });
+
+        let i = cards.findIndex((c) => c.classList.contains("active"));
+        if (i < 0) i = 0; // Default to the first card if no active card
+
+        let timer = setInterval(next, 3500); // Set an interval to rotate cards every 3.5s
+
+        function next() {
+          cards.forEach((c) => c.classList.remove("active")); // Remove "active" class from all cards
+          i = (i + 1) % cards.length; // Move to the next card, looping back to the first
+          cards[i].classList.add("active"); // Add "active" class to the next card
+        }
+
+        row.addEventListener("mouseenter", () => clearInterval(timer)); // Stop auto-rotation on hover
+        row.addEventListener(
+          "mouseleave",
+          () => (timer = setInterval(next, 3500))
+        ); // Resume auto-rotation when hover ends
+
+        document.addEventListener(
+          "visibilitychange",
+          () => {
+            if (document.hidden) {
+              clearInterval(timer); // Pause if document is hidden
+            } else {
+              timer = setInterval(next, 3500); // Resume if document becomes visible
+            }
+          },
+          { passive: true }
+        );
+      })();
+    </script>
+    <script src="./script.js"></script>
+  </body>
+</html>

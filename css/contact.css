@@ -1,25 +1,34 @@
 /* Layout base */
 :root {
-/* Brand (complementary accent hue) */
---brand: #9B59B6;  /* Classic Purple */
---brand-02: rgba(155, 89, 182, 0.02);
---brand-06: rgba(155, 89, 182, 0.06);
---brand-10: rgba(155, 89, 182, 0.10);
---brand-14: rgba(155, 89, 182, 0.14);
---brand-20: rgba(155, 89, 182, 0.20);
---brand-30: rgba(155, 89, 182, 0.30);
+  /* Brand (complementary accent hue) */
+  --brand: #9B59B6;
+  /* Classic Purple */
+  --brand-02: rgba(155, 89, 182, 0.02);
+  --brand-06: rgba(155, 89, 182, 0.06);
+  --brand-10: rgba(155, 89, 182, 0.10);
+  --brand-14: rgba(155, 89, 182, 0.14);
+  --brand-20: rgba(155, 89, 182, 0.20);
+  --brand-30: rgba(155, 89, 182, 0.30);
 
-/* Neutrals */
---bg: #F7FAFC;  /* Very light soft gray background */
---panel: #FFFFFF;  /* Clean white panel */
---text: black;  /* Medium gray for body text */
---muted: darkgrey;  /* Light muted grayish-blue for secondary text */
---line: #D1D9E1;  /* Light gray-blue for lines */
---shadow: 0 10px 30px rgba(155, 89, 182, 0.1);  /* Soft shadow with purple undertone */
+  /* Neutrals */
+  --bg: #F7FAFC;
+  /* Very light soft gray background */
+  --panel: #FFFFFF;
+  /* Clean white panel */
+  --text: black;
+  /* Medium gray for body text */
+  --muted: darkgrey;
+  /* Light muted grayish-blue for secondary text */
+  --line: #D1D9E1;
+  /* Light gray-blue for lines */
+  --shadow: 0 10px 30px rgba(155, 89, 182, 0.1);
+  /* Soft shadow with purple undertone */
 
-/* Heading and Subheading */
---heading: #000000;  /* Black for headings */
---subheading: #000000;  /* Black for subheadings */
+  /* Heading and Subheading */
+  --heading: #000000;
+  /* Black for headings */
+  --subheading: #000000;
+  /* Black for subheadings */
 
 
   /* Layout */
